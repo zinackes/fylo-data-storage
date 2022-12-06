@@ -2,5 +2,162 @@ body{
     margin: 0;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-    background-image: ;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.background-image{
+    height: 372px;
+    width: 100%;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 372px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .background-image{
+        margin-top: 0;
+        height: 745.5px;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+    .left-contour{
+        width: 260px !important;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .marginauto, .second-banner{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1440px){
+    .marginauto, .second-banner{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.marginauto{
+    width: 830px;
+    height: 100px;
+}
+
+
+.left-contour{
+    background-color: hsl(228, 56%, 26%);
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    bottom: 258px;
+}
+
+.padding{
+    padding: 30px;
+}
+
+
+.icon{
+    margin-left: 11.5px;
+    margin-top: 10.5px;
+}
+
+.icond{
+    margin-left: 9.5px;
+    margin-top: 12.5px;
+}
+
+.icont{
+    margin-left: 9.5px;
+    margin-top: 14.5px;
+}
+
+.icons{
+    margin-top: 30px;
+    display: flex;
+}
+
+.icon-margin{
+    margin-left: 19px;
+}
+
+.icons-border{
+    height: 45px;
+    width: 43px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.second-banner{
+    position: absolute;
+    width: 500px;
+    height: 130px;
+    bottom: 286px;
+    z-index: 2;
+    background-color: hsl(228, 56%, 26%);
+    margin-left: 330px;
+    border-radius: 10px;
+}
+
+.padding p{
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 15px !important;
+}
+
+
+.bar{
+    background-color: hsl(229, 57%, 11%);
+    height: 16px;
+    border-radius: 50px;
+}
+
+.bar-background{
+    padding-top: 1px;
+    height: 17px;
+    border-radius: 50px;
+    width: 300px;
+    padding-left: 2px;
+}
+
+.bar-background-color{
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+    height:13px;
+}
+
+.bar-dot{
+    float: right;
+    background-color: white;
+    height: 9px;
+    width: 8.5px;
+    border-radius: 100%;
+    margin-top: 1.8px;
+    margin-right: 2px;
+}
+.gb{
+    float: left;
+    margin-top: 5px !important;
+    font-weight: 700;
+}
+.gb-two{
+    margin-top: 5px !important;
+    float: right;
+    font-weight: 700;
+}
+
+.space-left{
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    bottom: 100px;
+    right: 35px;
+    background-color: white;
+    border-radius: 10px;
 }
