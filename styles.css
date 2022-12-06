@@ -15,30 +15,56 @@ body{
 }
 
 
-@media screen and (max-width: 375px) {
-    .background-image{
-        margin-top: 0;
-        height: 745.5px;
-        background-attachment: fixed;
-        background-size: contain;
-    }
-    .left-contour{
-        width: 260px !important;
-    }
-}
+
 
 @media screen and (min-width: 375px){
-    .marginauto, .second-banner{
+    .marginauto{
         margin-left: auto;
         margin-right: auto;
     }
 }
 @media screen and (min-width: 1440px){
-    .marginauto, .second-banner{
+    .marginauto{
         margin-left: auto;
         margin-right: auto;
     }
 }
+
+@media screen and (max-width: 855px){
+    .background-image{
+        background-image: url("/images/bg-mobile.png") !important;
+        margin: 0 !important;
+        height: 745px;
+        background-size: cover;
+    }
+    .marginauto{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+    }
+    .left-contour{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .second-banner{
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 !important;
+        width: 300px !important;
+        height: 150px !important;
+    }
+    .padding p{
+        text-align: center;
+    }
+    .space-left{
+        bottom: -30px !important;
+        right: 0px !important;
+        left: 58px;
+    }
+}
+
 .marginauto{
     width: 830px;
     height: 100px;
@@ -54,7 +80,7 @@ body{
     position: absolute;
     height: 180px;
     width: 300px;
-    bottom: 258px;
+    bottom: 286px;
 }
 
 .padding{
@@ -122,7 +148,7 @@ body{
     padding-top: 1px;
     height: 17px;
     border-radius: 50px;
-    width: 300px;
+    width: 75%;
     padding-left: 2px;
 }
 
@@ -153,11 +179,24 @@ body{
 }
 
 .space-left{
-    width: 150px;
-    height: 70px;
+    width: 160px;
+    height: 59.66px;
     position: absolute;
     bottom: 100px;
     right: 35px;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
+}
+
+.space-left h2{
+    margin: 0;
+    font-size: 35px;
+    margin-top: 8px;
+}
+
+.space-left span{
+    color: gray;
+    font-size: 13px !important;
+    margin-left: 2px;
 }
